@@ -28,6 +28,7 @@ public class OracleEmployeeDAOImpl implements IEmployeeDAO{
     @Override
     public List<EmployeeBO> getEmpsByDesg(String cond) throws Exception {
         List<EmployeeBO> listBO=null;
+        System.out.println("DataSource obj class name::"+ds.getClass());
         //input is dynamic so used simple statement
         try(//get pooled Jdbc connection
                 Connection con= ds.getConnection();

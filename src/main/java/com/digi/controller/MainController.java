@@ -28,7 +28,6 @@ public class MainController {
         listDTO.forEach(dto->{
             EmployeeVO vo=new EmployeeVO();
             BeanUtils.copyProperties(dto,vo);
-            System.out.println("Enter into Controller");
             vo.setSrNo(String.valueOf(dto.getSrNo()));
             vo.setEmpNo(String.valueOf(dto.getEmpNo()));
             vo.setEname(String.valueOf(dto.getEname()));
